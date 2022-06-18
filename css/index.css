@@ -1,22 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
 html body{
 	margin:  0;
 	padding: 0;
 	background-color: #394867;
 	color: #F1F6F9;
+	font-family: 'Poppins';
 }
 
 .sub-title{
 	font-weight: bold;
-	font-size: 77px;
+	font-size: 1.8em;
 	text-align: center;
-	margin-top: 25px;
-	margin-bottom: 20px;
+	margin-top: 35px;
+	margin-bottom: 40px;
 }
 
 /*header*/
 .header-title{
-	font-size: 2.5em;
+	font-size: 2em;
 	margin-left: 20px;
+	font-weight: bold;
 }
 
 .header{
@@ -40,6 +44,7 @@ html body{
 .nav-button{
 	font-size: 1.5em;
 	border: 1px solid #F1F6F9;
+	border-radius: 5px;
 	background-color: transparent;
 	margin: 0 10px;
 	color: #F1F6F9;
@@ -56,17 +61,7 @@ html body{
 	height: 0;
 }
 
-.home-button:hover{
-	transition: 0.5s;
-	background-color: #394867;
-}
-
-.sinopsis-button:hover{
-	transition: 0.5s;
-	background-color: #394867;
-}
-
-.casting-button:hover{
+.active, .nav-button:hover {
 	transition: 0.5s;
 	background-color: #394867;
 }
@@ -147,11 +142,33 @@ html body{
 	height: 300px;*/
 }
 
-.sinopsis-desc{
-	text-align: justify;
+.movie-bait{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 500px;
+	height: 300px;
 	margin-left: 30px;
 	margin-right: 10px;
+}
+
+.description{
+	margin-top: 0;
+}
+
+.link-movie{
+	padding: 12px 36.3%;
+	text-decoration: none;
+	text-align: center;
+	border: #F1F6F9 solid 1px;
+	border-radius: 3px;
+	color: #F1F6F9;
+}
+
+.link-movie:hover{
+	transition: 0.3s;
+	background-color: #14274E;
+	border: #14274E solid 1px;
 }
 
 /*casting desc*/

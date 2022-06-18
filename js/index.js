@@ -86,23 +86,37 @@ window.onload = ()=>{
 	}, 4500)
 
 	// navbar
-	$(".home-button").click(()=>{
+	$("#home").click(()=>{
 		$(document.documentElement).animate({
 			scrollTop: $(".top").offset().top
 		}, 200)
 	})
 
-	$(".sinopsis-button").click(()=>{
+	$("#sinopsis").click(()=>{
 		let header = $(".header").height()
 		$(document.documentElement).animate({
 			scrollTop: $(".sinopsis").offset().top - header
 		}, 200)
 	})
 
-	$(".casting-button").click(()=>{
+	$("#casting").click(()=>{
 		let header = $(".header").height()
 		$(document.documentElement).animate({
 			scrollTop: $(".casting").offset().top - header
 		}, 200)
 	})
+
+	let btnContainer = document.getElementById("navigations");
+	let buttons = btnContainer.getElementsByClassName("nav-button");
+
+	for (let index = 0; index < buttons.length; index++) {
+		buttons[index].addEventListener("click", function() {
+			let current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			// if (current.length > 0) { 
+			// 	current[0].className = current[0].className.replace(" active", "");
+			// }
+			this.className += " active";
+		});
+	}
 }

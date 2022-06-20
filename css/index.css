@@ -207,6 +207,10 @@ html body{
 	justify-content: center;
 }
 
+#Narator{
+	margin-top: 20.3px;
+}
+
 #Budi:hover{
 	opacity: 0.9;
 	transition: 750ms;
@@ -218,6 +222,11 @@ html body{
 }
 
 #Ucok:hover{
+	opacity: 0.9;
+	transition: 1s;
+}
+
+#Narator:hover{
 	opacity: 0.9;
 	transition: 1s;
 }
